@@ -1,0 +1,40 @@
+//request.http
+###
+
+GET http://localhost:8080
+
+###
+
+
+GET http://localhost:8080/api/posts
+
+###
+
+GET http://localhost:8080/api/posts/2
+
+###
+
+POST http://localhost:8080/api/posts
+content-type: application/json
+
+{
+    "title": "afin",
+    "description": "Channel 2",
+    "published" : true
+}
+
+###
+
+DELETE http://localhost:8080/api/posts/2
+content-type: application/json
+
+###
+
+PUT http://localhost:8080/api/posts/2
+content-type: application/json
+
+{
+    "title": "afin",
+    "description": "Channel 3",
+    "published" : true
+}

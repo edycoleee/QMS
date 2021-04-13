@@ -1,0 +1,38 @@
+//request.http
+###
+
+GET http://localhost:3001
+
+###
+
+
+GET http://localhost:3001/subscribers
+
+###
+
+GET http://localhost:3001/subscribers/607506fea43ba82a247da254
+
+###
+
+POST http://localhost:3001/subscribers
+content-type: application/json
+
+{
+    "name": "silmi",
+    "subscribedToChannel": "Channel 2"
+}
+
+###
+
+DELETE http://localhost:3001/subscribers/607506fea43ba82a247da254
+content-type: application/json
+
+###
+
+PATCH http://localhost:3001/subscribers/607507b3a43ba82a247da255
+content-type: application/json
+
+{
+    "name": "afin",
+    "subscribedToChannel": "Channel 1"
+}
